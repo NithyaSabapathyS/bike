@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    background-color: deepskyblue;
+}
+
+ul{
+    position: absolute;
+    right:5%;
+    top:5%;
+}
+
+ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+
+}
+
+ul li a{
+
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    font-weight: bolder;
+    color: white;
+}
+
+.thumbnail{
+     padding-top: 3%; 
+}
+.thumbnail li{
+    list-style: none;
+    position: relative;
+    margin-top: 5%;
+}
+.thumbnail img{
+
+    display: block;
+    max-width: 140px;
+    
+}
+.thumbnail img:hover{
+
+    transform: translateX(30px);
+    transition: 0.5s;
+}
+
+.big_image img{
+
+    position: absolute;
+    top: 150px;
+    right:600px;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.content {
+    position: absolute;
+    top: 180px;
+    right: 180px;
+    margin: 0px -31px 0 0;
+    max-width: 400px;
+
+}
+.content p{
+    margin-left: 77px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: coral;
+}
+
+.content h1{
+
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+    text-shadow: 5px 5px 2px black;
+    margin-left: 9%;
+}
+
+.content h2{
+
+    font-size: 134%;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+.path{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  antiquewhite;
+    clip-path: circle(600px at left);
+    
+}

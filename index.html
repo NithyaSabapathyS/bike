@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bikestyle.css">
+    <title>Super Bikes</title>
+</head>
+<body>
+    <div class="container" id="contain">
+        <div class="path" id="path"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+
+        <div class = "thumbnail">
+            <li><img src="../ktm1.png" onclick="big('../ktm1.png');path('#e5e5e5'); bg('blue')"></li>
+            <li><img src="../ninja.png"  onclick="big('../ninja.png');path('white'); bg('yellow')"></li>
+            <li><img src="../ktm.png" onclick="big('../ktm.png');path('#e5e5e5'); bg('skyblue')" ></li>
+        </div>
+
+        <div class="big_image" >
+            <img src="../ninja.png" class ="big1" >
+        </div>
+        <div class="content">
+            <p>Let's Ride</p><br>
+            <h1>Kick of the fear while riding</h1><br>
+            <h2>for bike lovers and bike riders</h2> 
+        </div>
+    
+
+    </div>
+    
+
+</body>
+<script>
+function big(img){
+
+document.querySelector('.big1').src=img;
+}
+
+function path(color){
+   const path = document.querySelector('.path');
+    path.style.background = color;
+}
+
+function bg(color)
+{
+    const bg = document.querySelector('.container');
+    bg.style.background = color;
+}
+</script>
+</html>
